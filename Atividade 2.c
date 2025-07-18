@@ -14,27 +14,35 @@ int main(){
 
 Questão 2
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h>
 
-int main() {
-int num1, num2, soma, subtracao,multiplicacao,divisao,resto;
-printf("digite o primeiro numero: \n");
-scanf("%d", &num1);
-printf("digite o segundo numero: \n");
-scanf("%d", &num2);
 
-soma = num1+num2;
-subtracao = num1-num2;
-multiplicacao = num1*num2;
-divisao = num1/num2;
-resto = num1%num2;
+int main(){
+	
+	int num1, num2, soma, sub, multi, divi, res;
+	
+	printf("Informe o primeiro numero inteiro: ");
+	scanf("%d", &num1);
+	printf("Informe o segundo numero inteiro: ");
+	scanf("%d", &num2);
+	
+	soma = num1 + num2;
+	sub = num1 - num2;
+	multi = num1 * num2;
+	divi = num1 / num2;
+	res = num1 % num2;
+	
+	printf("Numero 1 \t Numero 2 \t Operacao \n");
+    printf("%d \t \t %d \t \t numero1 + numeo2 = %d \n", num1, num2, soma);
+    printf("%d \t \t %d \t \t numero1 - numeo2 = %d \n", num1, num2, sub);
+    printf("%d \t \t %d \t \t numero1 * numeo2 = %d \n", num1, num2, multi);
+    printf("%d \t \t %d \t \t numero1 / numeo2 = %d \n", num1, num2, divi);
+    printf("%d \t \t %d \t \t numero1 %% numeo2 = %d \n", num1, num2, res
+    );
 
-printf("A soma dos dois numeros é: %d\n", soma);
-printf("A subtracao dos dois numeros é: %d\n", subtracao);
-printf("A multiplicacao dos dois numeros é: %d\n", multiplicacao);
-printf("A divisao dos dois numeros é: %d\n", divisao);
-printf("O resto dos dois numeros é: %d\n", resto);
-return 0;
+
+   
+	return 0;
 }
 
 Questão 3
